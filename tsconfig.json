@@ -8,7 +8,9 @@
         "moduleResolution": "node",
         "resolveJsonModule": true,
         "allowSyntheticDefaultImports": true,
-        "outDir": "lib"
+        "allowUmdGlobalAccess": true,
+        "outDir": "lib",
+        "lib":["ES2015.Core","ES2017.TypedArrays", "ES2019.Array"]
        
     },
     "files":[
