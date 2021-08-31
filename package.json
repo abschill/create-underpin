@@ -3,11 +3,12 @@
   "version": "0.0.1",
   "description": "SSR HTML Loader",
   "main": "index.js",
+  "bin":"index.js",
   "scripts": {
     "build": "webpack",
     "test": "node example"
   },
-  "author": "",
+  "author": "abschill",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.15.0",
