@@ -5,4 +5,4 @@
 
 ## Options
 - type
-Defines the type. For a full list of types, refer to the docs.
+Defines the type. For a full list of types, refer [here](https://github.com/abschill/underpin/blob/0.0.3/docs/types.md).
