@@ -11,10 +11,6 @@ Creates Default Project Structure with Express, Lit, Sass.
 
 Creates Default Project Structure with Express, Lit, CSS.
 
-- ts-min
-
-Creates Typescript Project Structure with Express, Lit, SCC
-
 - typescript
 
-Creates Typescript Project Structure with Express, Lit, Sass
+Creates Typescript Project Structure with Express, Lit, CSS.

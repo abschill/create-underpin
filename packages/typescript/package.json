@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "chalk": "^4.1.2"
+    "dotenv": "^10.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
