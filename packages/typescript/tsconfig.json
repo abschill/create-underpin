@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "allowJs": true,
+        "removeComments": true,
+        "sourceMap": true,
+        "module":"commonjs",
+        "target": "es2015",
+        "outDir": "/dist",
+        "experimentalDecorators": true,
+        "lib":["es2015", "DOM", "DOM.Iterable"],
+       
+    }
+}
