@@ -9,4 +9,7 @@ module.exports = ()=>{
     Logger.status( `Creating New Project in \n${root}` );
     Logger.split();
     fs.copySync(  path.resolve(__dirname, '..', 'packages', 'typescript' ), root  );
+    setTimeout(()=> {
+        Logger.success( 'Typescript Project Installed' );
+    });
 }
