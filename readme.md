@@ -1,8 +1,8 @@
 # Underpin CLI
 
 ## Usage
-    npx create-underpin [OPTIONS]
+    npx create-underpin [path]
 
 ## Options
-- type
-Defines the type. For a full list of types, refer [here](https://github.com/abschill/underpin/blob/0.0.3/docs/types.md).
+- path 
+Defines the path of the installation directory, defaults to the working directory calling the command
