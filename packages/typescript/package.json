@@ -4,7 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index"
+    "start": "node index",
+    "dev":"npm-run-all --parallel watch:src watch:server watch:sass",
+    "build:src":"webpack",
+    "watch:src":"webpack --watch",
+    "build:sass":"node utils/sass",
+    "watch:sass":"sass --watch ./src/sass/style.scss:./dist/style.css",
+    "watch:server":"nodemon index"
   },
   "keywords": [],
   "author": "",
