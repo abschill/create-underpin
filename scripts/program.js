@@ -16,13 +16,20 @@ const genPath = (i) => {
     }
 }
 const setup = ( args ) => {
-    const path = genPath( args[0] );
-    Logger.status( `Building Project at ${path}`)
-    Logger.split();
-
-    if( args[1] ) {
-        Logger.status( `Chosen Template: ${args[1]}` );
+    try{
+        const path = genPath( args[0] );
+        Logger.status( `Building Project at ${path}`)
+        Logger.split();
+        if( args[1] ) {
+            Logger.status( `Chosen Template: ${args[1]}` );
+        }
+        Logger.heading( 'Success' )
     }
+    catch ( e ) {
+        Logger.error( e );
+        process.exit( 1 );
+    }
+    
 }
 
 module.exports = setup;

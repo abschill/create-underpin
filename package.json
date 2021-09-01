@@ -1,29 +1,21 @@
 {
-    "name": "create-underpin",
-    "version": "0.0.23",
-    "description": "npm package runner for generating project boiler plates",
-    "main": "index.js",
-    "bin": "index.js",
-    "scripts": {
-      "build": "webpack"
-    },
-    "author": "abschill",
-    "license": "ISC",
-    "devDependencies": {
-      "@babel/core": "^7.15.0",
-      "@babel/plugin-transform-runtime": "^7.15.0",
-      "@babel/preset-env": "^7.15.0",
-      "babel-loader": "^8.2.2",
-      "clean-webpack-plugin": "^4.0.0-alpha.0",
-      "ts-loader": "^9.2.5",
-      "typescript": "^4.4.2",
-      "webpack": "^5.51.1",
-      "webpack-cli": "^4.8.0"
-    },
-    "dependencies": {
-      "chalk": "^4.1.2",
-      "fs-extra": "^10.0.0",
-      "jsdom": "^17.0.0",
-      "yargs": "^17.1.1"
-    }
+  "name": "create-underpin",
+  "version": "0.0.24",
+  "description": "npm package runner for generating project boiler plates",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "abschill",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "figlet": "^1.5.2",
+    "fs-extra": "^10.0.0",
+    "inquirer": "^8.1.2",
+    "shelljs": "^0.8.4",
+    "yargs": "^17.1.1"
   }
+}
