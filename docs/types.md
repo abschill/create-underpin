@@ -1,7 +1,7 @@
 # Types
 
-## Usage
-    npx create-underpin --type="default"
+## Example
+    npx create-underpin ./newFolder [type]
 
 - default
 
@@ -10,7 +10,3 @@ Creates Default Project Structure with Express, Lit, Sass.
 - min
 
 Creates Default Project Structure with Express, Lit, CSS.
-
-- typescript
-
-Creates Typescript Project Structure with Express, Lit, CSS.
