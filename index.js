@@ -3,29 +3,4 @@ const yargs = require( 'yargs/yargs' );
 const { hideBin } = require( 'yargs/helpers' );
 const argv = yargs( hideBin( process.argv ) ).argv;
 const _cli = require( './scripts/program' );
-// const Logger = require( './util/logger' );
-//console.log( argv );
-
-//has --option of some sort
-//console.log( Object.entries(argv).length > 2  )
-// console.log( argv._ );
-// if( Object.entries( argv ).length > 2  ) {
-
-//     Logger.status( 'Starting Underpin Scaffold...')
-//     Logger.status();
-
-//     if( Object.keys( argv ).includes( 'type' ) ) {
-//         switch( argv.type ){
-//             default:
-//                 return Logger.status( `Selected Type ${argv.type}` );
-//         }
-//     }
-//     else {
-//         Logger.error( 'error' );
-//     }
-// }
-// else {
-//     return Logger.status( 'Default Placeholder' );
-//     //return defaultTemplate();
-// }
-_cli( argv._ );
+_cli( argv._, argv.mode );

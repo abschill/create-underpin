@@ -1,7 +1,6 @@
 const Logger = require( '../util/logger' );
-const defaultTemplate = require( '../bin/default' );
 const path = require( 'path' );
-const shell = require( 'shelljs' );
+const { _default, _ts } = require( './shell' );
 const genPath = ( i ) => {
     if( i === '.'  || i === '/' || i === undefined || i === null ){
         return process.cwd();
@@ -16,20 +15,25 @@ const genPath = ( i ) => {
         }
     }
 }
-const setup = ( args ) => {
+
+const setup = ( args, mode ) => {
     try{
         const _path = genPath( args[0] );
         Logger.status( `Building Project at ${_path}` )
         Logger.split();
-        if( args[1] ) {
-            Logger.status( `Chosen Template: ${args[1]}` );
+        if( !mode ) {
+            Logger.status( 'No Mode Chosen ... defaulting' );
+            _default( _path );
         }
         else {
-            Logger.status( 'No Template Chosen ... using default' );
-            defaultTemplate(_path);
-            shell.cd(_path);
-            Logger.status( 'Installing Packages..' );
-            shell.ls().exec( 'yarn install' )
+            switch( mode ){
+                case "ts":
+                    _ts( _path );
+                    break;
+                default:
+                    _default( _path );
+                    break;
+            }
         }
         Logger.heading( 'Success' );
         process.exit( 0 );

@@ -1,22 +1,19 @@
 {
-  "name": "create-underpin",
-  "version": "0.0.24",
-  "description": "npx tool for generating fullstack project boiler plates",
-  "main": "index.js",
-  "bin": "index.js",
-  "scripts": {
-    "build": "webpack"
-  },
-  "author": "abschill",
-  "license": "ISC",
-  "devDependencies": {},
-  "dependencies": {
-    "chalk": "^4.1.2",
-    "cli-progress": "^3.9.0",
-    "figlet": "^1.5.2",
-    "fs-extra": "^10.0.0",
-    "inquirer": "^8.1.2",
-    "shelljs": "^0.8.4",
-    "yargs": "^17.1.1"
+    "name": "create-underpin",
+    "version": "0.0.25",
+    "description": "npx tool for generating fullstack project boiler plates",
+    "main": "index.js",
+    "bin": "index.js",
+    "author": "abschill",
+    "license": "ISC",
+    "devDependencies": {},
+    "dependencies": {
+      "chalk": "^4.1.2",
+      "cli-progress": "^3.9.0",
+      "figlet": "^1.5.2",
+      "fs-extra": "^10.0.0",
+      "inquirer": "^8.1.2",
+      "shelljs": "^0.8.4",
+      "yargs": "^17.1.1"
+    }
   }
-}
