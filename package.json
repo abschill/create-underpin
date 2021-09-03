@@ -6,6 +6,9 @@
     "bin": "index.js",
     "author": "abschill",
     "license": "ISC",
+    "scripts":{
+        "test":"node index --mode=test"
+    },
     "devDependencies": {},
     "dependencies": {
       "chalk": "^4.1.2",
