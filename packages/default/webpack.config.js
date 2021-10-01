@@ -1,6 +1,6 @@
 
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const path = require('path');
+const { CleanWebpackPlugin } = require( 'clean-webpack-plugin' );
+const path = require( 'path' );
 module.exports = {
     devtool:'inline-source-map',
     entry:{
@@ -17,7 +17,7 @@ module.exports = {
     },
     output:{
         filename:'[name].js',
-        path:path.resolve(__dirname, 'dist'),
+        path:path.resolve( __dirname, 'public/js' ),
     },
     target:'web',
     plugins:[

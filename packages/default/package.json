@@ -5,20 +5,21 @@
   "main": "index.js",
   "scripts": {
     "start": "node index",
-    "dev":"npm-run-all --parallel watch:src watch:server watch:sass",
-    "build:src":"webpack",
-    "watch:src":"webpack --watch",
-    "build:sass":"node utils/sass",
-    "watch:sass":"sass --watch ./src/sass/style.scss:./dist/style.css",
-    "watch:server":"nodemon index"
+    "dev": "npm-run-all --parallel watch:src watch:server watch:sass",
+    "build:src": "webpack",
+    "watch:src": "webpack --watch",
+    "build:sass": "sass ./src/sass/style.scss:./public/css/style.css",
+    "watch:sass": "sass --watch ./src/sass/style.scss:./public/css/style.css",
+    "watch:server": "nodemon index"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "lit": "^2.0.0-rc.3",
     "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "html-chunk-loader": "^0.0.39",
+    "lit": "^2.0.0-rc.3",
     "postcss": "^8.3.5"
   },
   "devDependencies": {
