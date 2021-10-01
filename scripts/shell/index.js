@@ -5,7 +5,13 @@ const Logger = require( '../../util/logger' );
 const finalize = (_path) => {
     shell.cd(_path);
     Logger.status( 'Installing Packages..' );
-    shell.ls().exec( 'yarn install' )
+    if( shell.which( 'yarn') ) {
+        shell.ls().exec( 'yarn install' )
+    }
+    else {
+        shell.ls().exec( 'npm install' );
+    }
+    
 }
 const _default = ( _path ) => {
     defaultTemplate( _path );
