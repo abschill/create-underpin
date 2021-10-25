@@ -18,7 +18,7 @@
   "dependencies": {
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "html-chunk-loader": "^0.0.91",
+    "html-chunk-loader": "^0.1.7",
     "lit": "^2.0.0-rc.3",
     "postcss": "^8.3.5"
   },
