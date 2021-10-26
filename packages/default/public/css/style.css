@@ -5,4 +5,19 @@
   font-family: "Fira Sans", sans-serif;
 }
 
+nav {
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+nav ul {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  width: 50%;
+}
+
 /*# sourceMappingURL=style.css.map */

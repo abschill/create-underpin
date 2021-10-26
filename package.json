@@ -1,6 +1,6 @@
 {
     "name": "create-underpin",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "npx tool for generating fullstack project boiler plates",
     "main": "index.js",
     "bin": "index.js",

@@ -1,13 +1,10 @@
-const Loader = require( 'html-chunk-loader' );
-const Handler = new Loader({
+const loader = require( 'html-chunk-loader' );
+const Handler = loader({
      root:'views',
-     _partialInput: {
-         head: {
-            title: 'Hello World',
-            desc: 'Cool Description Bro',
-        },
-        footer: {
-            title: 'Hello From Footer'
+     partialInput: {
+         '*': {
+            meta_title: 'Hello World',
+            meta_desc: 'Cool Description Bro'
         }
      }
 });
