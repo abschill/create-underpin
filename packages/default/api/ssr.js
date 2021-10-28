@@ -6,6 +6,7 @@ const Handler = loader({
             meta_title: 'Hello World',
             meta_desc: 'Cool Description Bro'
         }
-     }
+     },     
+     watch: true
 });
 module.exports = Handler;
